@@ -25,10 +25,10 @@ with open(ZIP_MULTIPLIERS_PATH, "r") as f:
 # Streamlit app UI
 st.title("House Price Prediction")
 
-beds = st.number_input("Number of Bedrooms", min_value=0, max_value=10, value = "")
-baths = st.number_input("Number of Bathrooms", min_value=0, max_value=10, value = "")
-sqft = st.number_input("House Size (sqft)", min_value=100, max_value=10000, value = "")
-acre_lot = st.number_input("Lot Size (acre)", min_value=0.0, max_value=10.0, value = "")
+beds = st.number_input("Number of Bedrooms", value = "")
+baths = st.number_input("Number of Bathrooms", value = "")
+sqft = st.number_input("House Size (sqft)", value = "")
+acre_lot = st.number_input("Lot Size (acre)", value = "")
 zip_code = st.text_input("ZIP Code", value = "")
 date_input = st.date_input("Date (approximate listing date)")
 
