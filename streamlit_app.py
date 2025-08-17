@@ -30,7 +30,7 @@ baths = st.number_input("Number of Bathrooms", min_value=0, max_value=10, value=
 sqft = st.number_input("House Size (sqft)", min_value=100, max_value=10000, value=None)
 acre_lot = st.number_input("Lot Size (acre)", min_value=0.0, max_value=10.0, value=None)
 zip_code = st.text_input("ZIP Code", value=None)
-date_input = st.date_input("Date (approximate listing date)")
+date_input = st.date_input("Date (approximate listing date)", value=None)
 
 if st.button("Predict Price"):
     try:
