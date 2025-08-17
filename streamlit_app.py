@@ -50,7 +50,7 @@ if st.button("Predict Price"):
         # Inflation adjustment
         today = datetime.today()
         total_months = (today.year - year) * 12 + (today.month - month)
-        inflation_rate = -0.002
+        inflation_rate = -0.005
         price_val *= (1 + inflation_rate * total_months)
 
         # Zip code adjustment
